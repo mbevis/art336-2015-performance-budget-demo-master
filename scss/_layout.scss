@@ -1,1 +1,16 @@
 /* Layout.scss */
+
+nav[role="navigation"] {
+    position:fixed;
+    max-width: 600px;
+    text-align: center;
+    top: 0;
+    // bottom: 0;
+    // left; 0;
+    //right: 0;
+    width: 100%;
+}
+
+header[role="banner"] {
+    margin: 100px 0 140px 0;
+}

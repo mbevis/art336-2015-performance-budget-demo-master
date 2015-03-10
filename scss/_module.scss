@@ -1,1 +1,40 @@
 /* Module.scss */
+
+nav[role="navigation"] ul {
+    background-color: $color;
+    list-style-type: none;
+    margin: 0;
+    padding: 5px 8px 5px 8px;
+}
+
+nav[role="navigation"] ul li {
+    display: inline;
+    margin: 0 4px;
+}
+
+nav[role="navigation"] a {
+    color: #fff;
+    font-size: 18px;
+    transition: color 300ms linear;
+    &:hover {
+        color: darken(#fff,30%);
+        transition: color 300ms linear;
+    }
+}
+
+.place-mark {
+//path.place-mark
+    fill: $logo-color;
+}
+
+section h1 {
+    font-size: em(70px);
+}
+.cafe h1, .food h1, .attractions h1 {
+    font-size: em(70px);
+}
+
+.cafe-location  h1, .food-location h1, .attractions-location h1,
+.cafe-location  h2, .food-location h2, .attractions-location h2 {
+    font-size: em(44px);
+}

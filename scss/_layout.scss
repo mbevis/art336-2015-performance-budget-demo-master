@@ -14,3 +14,10 @@ nav[role="navigation"] {
 header[role="banner"] {
     margin: 100px 0 140px 0;
 }
+
+.cafe-location, .food-location, .attractions-location {
+    margin-bottom: em(75px);
+    &:last-of-type {
+        margin-bottom: em(150px);
+    }
+}

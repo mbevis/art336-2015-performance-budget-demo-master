@@ -27,9 +27,6 @@ nav[role="navigation"] a {
     fill: $logo-color;
 }
 
-section h1 {
-    font-size: em(70px);
-}
 .cafe h1, .food h1, .attractions h1 {
     font-size: em(70px);
 }
@@ -37,4 +34,56 @@ section h1 {
 .cafe-location  h1, .food-location h1, .attractions-location h1,
 .cafe-location  h2, .food-location h2, .attractions-location h2 {
     font-size: em(44px);
+}
+
+abbr[title="Maryland"] {
+    border-bottom: none;
+}
+
+.street-address:before {
+    content: "a. ";
+    @include headline-font;
+}
+
+.tel {
+    display: block;
+    &:before {
+        content: "a. ";
+        @include headline-font;
+    }
+}
+
+footer[role="contentinfo"] {
+    background-color: $color;
+    color: #fff;
+    font-size: 18px;
+    padding: 9px;
+}
+
+footer[role="contentinfo"] h2 {
+    margin: 0;
+}
+
+footer[role="contentinfo"] ul+ h2 {
+    margin-top: em(22px);
+}
+
+footer[role="contentinfo"] ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer[role="contentinfo"] ul li {
+    display: inline-block;
+    margin: 0 4px 0 0;
+    padding: 0;
+}
+
+footer[role="contentinfo"] a {
+    color: #fff;
+    transition: color 300ms linear;
+    &:hover {
+        
+    }
 }
